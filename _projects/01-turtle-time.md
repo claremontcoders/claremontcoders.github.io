@@ -45,7 +45,9 @@ The list of things a turtle can do is called its _interface_, or sometimes _appl
 Use multiple commands from the turtle interface to draw a picture with multiple colors.
 
 ## A Fancy Path
-There are a few ways we can combine turtle commands to create complicated figures. We'll learn about some of nitty gritty in the next project. For now, here is some code to play with. There will be some syntax that is unfamiliar. That's okay for now. You'll still be able to draw a cool design.
+Below is some code that uses features of JavaScript we haven't seen yet to combine multiple turtle commands to create a complicated figure.
+
+Some of syntax is new and unfamiliar. That's okay for now. In the next project we will go over all of the pieces in this example. And you can experiment with this program to create cool designs today!
 
 1. Type the following code into the JavaScript console to create a fancy path.
 ```js
