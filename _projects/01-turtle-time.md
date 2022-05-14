@@ -17,6 +17,20 @@ layout: page
 4. Tell the turtle to turn 90 degrees to the left by typing the command <code>turtle.left(90);</code>. You should see the direction that the turtle is pointing to change by 90 degrees to the turtle's left.
 5. Tell the turtle to move forward and turn again until it has drawn a square.
 
+## Make a Mistake
+Everyone makes mistakes when coding. So it's good to practice what happens when something goes wrong.
+
+1. Misspell the command to go forward `turtle.foward(20);`.
+2. Congratulate yourself on creating your first bug.
+
+    The JavaScript interpreter will with an error message. Error messages try to point out where a problem is, but they don't tell you how to fix it.
+```
+Uncaught TypeError: turtle.foward is not a function
+    <anonymous> debugger eval code:1
+```
+3. What does the error message say the problem is? Come up with a plan to fix it.
+4. Press the <kbd>Up</kbd> in the JavaScript console to scroll back to the last command you typed. Edit it and hit <kbd>Enter</kbd>.
+
 ## A Triangle Path
 
 1. To clear the turtle's world, you can refresh the browser. **Hint:** Typing <kbd>Control</kbd> + <kbd>R</kbd> in most browsers will do the trick.
