@@ -11,7 +11,6 @@ layout: page
 </div>
 
 ## Walking and Turning
-
 1. Open up <em>Tools &gt; Browser Tools &gt; Web Developer Tools</em>. A new window in your browser will appear with many tabs. **Shortcut:** In Firefox, you can use the keyboard shortcut <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open the Developer Tools window.
 2. Click on the <em>Console</em> tab in the Developer Tools window. This console allows you to type and run JavaScript code to control the turtle.
 3. Tell the turtle to walk 20 steps forward by typing the command <code>turtle.forward(20);</code> in the JavaScript Console and hitting the <kbd>Enter</kbd>. You should see the turtle move in the direction it is pointing and a line behind it should appear.
@@ -25,9 +24,9 @@ layout: page
 
 {% include svg/01-turtle-triangle.svg %}
 
-**Hint:** At each corner of triangle there are two angles, the <span style="color: violet">interior angle</span> on the inside of the triangle and the <span style="color: orange">exterior angle</span> on the outside of the shape. In an equilateral triangle all of the interior angles are the same.
+**Hint:** At each corner of a triangle there are two angles, the <span style="color: violet">interior angle</span> on the inside of the triangle and the <span style="color: orange">exterior angle</span> on the outside of the shape. In an equilateral triangle all of the interior angles are the same size.
 
-How are the interior and exterior angles related? How big are the interior angles? How big are the exterior angles? How many degrees should the turtle turn to form an equilateral triangle?
+How are the interior and exterior angles related to one another? How big are the interior angles in an equilateral triangle? How big are the exterior angles? How many degrees should the turtle turn to form an equilateral triangle?
 
 **Hint:** Pretend to be the turtle and walk the path of an equilateral triangle. Step forward and turn, forward and turn, forward and turn. Is the angle you turn big or small?
 
