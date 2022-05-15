@@ -1,0 +1,46 @@
+---
+title: Blank Canvas
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Turtle</title>
+  <style>
+     #world {
+       width: 480px;
+       height: 320px;
+       border: 1px solid black;
+       position: relative;
+     }
+
+     canvas {
+       position: absolute;
+     }
+
+     #drawing-layer { z-index: 1; }
+     #turtle-layer { z-index: 2; }
+  </style>
+</head>
+<body>
+  <h1>Turtle Time</h1>
+  <div id="world">
+    <canvas id="drawing-layer" width="480" height="320">Drawing layer</canvas>
+    <canvas id="turtle-layer" width="480" height="320">Turtle layer</canvas>
+  </div>
+  <a href="#" onclick="downloadCavnas(drawingLayer)" download="turtle.png">Download Image</a>
+  <script>
+    {% include js/turtle.js %}
+
+    // Create the turtle and add it to the world
+    const drawingLayer = document.getElementById("drawing-layer");
+    const turtleLayer = document.getElementById("turtle-layer");
+    const turtle = new Turtle(drawingLayer, turtleLayer);
+  </script>
+  <script>
+    function downloadCavnas(canvas) {
+      const imageUrl = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+      window.location.href = imageUrl;
+    }
+  </script>
+</body>
+</html>

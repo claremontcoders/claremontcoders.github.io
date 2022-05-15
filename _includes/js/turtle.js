@@ -8,7 +8,7 @@ function to_rad(deg) {
 }
 
 function drawTurtle(turtle) {
-  const context = turtle.bufferContext;
+  const context = turtle.turtleContext;
   context.save();
   // Translate and rotate to center on the turtle
   context.translate(turtle.x, turtle.y);
@@ -24,8 +24,8 @@ function drawTurtle(turtle) {
 }
 
 function clearTurlte(turtle) {
-  const context = turtle.bufferContext;
-  context.clearRect(0, 0, turtle.backBuffer.width, turtle.backBuffer.height);
+  const context = turtle.turtleContext;
+  context.clearRect(0, 0, turtle.turtleCanvas.width, turtle.turtleCanvas.height);
 }
 
 function refreshTurtle(turtle) {
@@ -36,38 +36,36 @@ function refreshTurtle(turtle) {
 }
 
 class Turtle {
-  constructor(canvas, backBuffer) {
-    this.canvas = canvas;
-    this.context = canvas.getContext("2d");
+  constructor(drawingCanvas, turtleCanvas) {
+    this.drawingCanvas = drawingCanvas;
+    this.drawingContext = drawingCanvas.getContext("2d");
     this.heading = 0;
-    this.x = canvas.width / 2 + 0.5;
-    this.y = canvas.height / 2 + 0.5;
+    this.x = drawingCanvas.width / 2 + 0.5;
+    this.y = drawingCanvas.height / 2 + 0.5;
     this.isPenDown = true;
     this.showTurtle = true;
-    this.backBuffer = backBuffer;
-    this.bufferContext = backBuffer.getContext("2d");
+    this.turtleCanvas = turtleCanvas;
+    this.turtleContext = turtleCanvas.getContext("2d");
 
     refreshTurtle(this);
   }
 
   penDown() {
-    this.isPenDown = true;xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    this.isPenDown = true;
   }
 
   penUp() {
     this.isPenDown = false;
   }
 
-  setPenStyle(color) {
-    this.context.strokeStyle = color;
-    this.bufferContext.fillStyle = color;
+  setPenColor(color) {
+    this.drawingContext.strokeStyle = color;
+    this.turtleContext.fillStyle = color;
     refreshTurtle(this);
+  }
+
+  setPenWidth(size) {
+    this.drawingContext.lineWidth = size;
   }
 
   forward(steps) {
@@ -81,10 +79,10 @@ class Turtle {
       return;
     }
     // Draw the line
-    this.context.beginPath();
-    this.context.moveTo(x0, y0);
-    this.context.lineTo(this.x, this.y);
-    this.context.stroke();
+    this.drawingContext.beginPath();
+    this.drawingContext.moveTo(x0, y0);
+    this.drawingContext.lineTo(this.x, this.y);
+    this.drawingContext.stroke();
 
     refreshTurtle(this);
   }

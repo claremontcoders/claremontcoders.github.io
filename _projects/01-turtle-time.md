@@ -6,8 +6,8 @@ layout: page
 # It's Turtle Time
 
 <div id="world">
-  <canvas id="drawing-layer" width="200" height="200">Green rectangle</canvas>
-  <canvas id="turtle-layer" width="200" height="200">Backbuffer</canvas>
+  <canvas id="drawing-layer" width="200" height="200">Path layer</canvas>
+  <canvas id="turtle-layer" width="200" height="200">Turtle layer</canvas>
 </div>
 
 ## Walking and Turning
@@ -16,6 +16,11 @@ layout: page
 3. Tell the turtle to walk 20 steps forward by typing the command <code>turtle.forward(20);</code> in the JavaScript Console and hitting the <kbd>Enter</kbd>. You should see the turtle move in the direction it is pointing and a line behind it should appear.
 4. Tell the turtle to turn 90 degrees to the left by typing the command <code>turtle.left(90);</code>. You should see the direction that the turtle is pointing to change by 90 degrees to the turtle's left.
 5. Tell the turtle to move forward and turn again until it has drawn a square.
+
+## A Bigger World
+1. Open up a [blank canvas](blank-canvas){:target="_blank"} in a new browser tab.
+2. Open the JavaScript console if it is not already open in this new tab.
+3. Do all of your coding in the new tab.
 
 ## Make a Mistake
 Everyone makes mistakes when coding. So it's good to practice what happens when something goes wrong.
@@ -46,13 +51,14 @@ How are the interior and exterior angles related to one another? How big are the
 
 ## Explore Turtle Commands
 
-The turtle knows a few other commands other than `turtle.forward();` and `turtle.left();`. The turtle can also walk right, back, pick its pen up, and put it down again, hide itself, and show itself again. The turtle can also change the color of its pen.
+The turtle knows a few commands other than `turtle.forward();` and `turtle.left();`. The turtle can also walk right, back, pick its pen up, and put it down again, hide itself, and show itself again. The turtle can also change the size and color of its pen.
 
 1. Use `turtle.right(degrees);` to turn the turtle to its right. You will need to replace the placeholder parameter degrees with the number of degrees you would like the turtle to turn.
 2. Use `turtle.penUp();` to pick the pen up. Move the turtle afterward. Unlike `turtle.forward(steps);` and `turtle.left(degrees);`, this command does not take any input.
 3. Use `turtle.penDown();` to put the pen down to begin drawing again.
-4. Use `turtle.setPenStyle(color);` to change the color of the pen that the turtle draws with. You can find the [list of colors](https://en.wikipedia.org/wiki/Web_colors#Extended_colors) that the turtle knows by name on Wikipedia. **Important:** When you tell the turtle to change color of the pen, you need quote the name of the color like this: `turtle.setPenStyle("lime");`.
-5. Use the commands `turtle.hide();` and `turtle.show();` to make the turtle disappear and reappear from your drawing.
+4. Use `turtle.setPenWidth(size)` to change the width of the pen.
+5. Use `turtle.setPenColor(color);` to change the color of the pen that the turtle draws with. You can find the [list of colors](https://en.wikipedia.org/wiki/Web_colors#Extended_colors) that the turtle knows by name on Wikipedia. **Important:** When you tell the turtle to change color of the pen, you need quote the name of the color like this: `turtle.setPenColor("lime");`.
+6. Use the commands `turtle.hide();` and `turtle.show();` to make the turtle disappear and reappear from your drawing.
 
 The list of things a turtle can do is called its _interface_, or sometimes _application programming interface_ or API for short. In programming we make new interfaces or use interfaces that other people made. For now you'll use existing APIs. In time you will create your own!
 
@@ -65,7 +71,7 @@ Some of syntax is new and unfamiliar. That's okay for now. In the next project w
 
 1. Type the following code into the JavaScript console to create a fancy path.
 ```js
-turtle.setPenStyle("orange");
+turtle.setPenColor("orange");
 for(let i = 0; i < 20; i++) {
   for(let step = 0; step < 180; step++) {
        turtle.forward(1);
