@@ -28,7 +28,7 @@ Everyone makes mistakes when coding. So it's good to practice what happens when 
 1. Misspell the command to go forward `turtle.foward(20);`.
 2. Congratulate yourself on creating your first bug.
 
-    The JavaScript interpreter will with an error message. Error messages try to point out where a problem is, but they don't tell you how to fix it.
+    The JavaScript interpreter will respond with an error message. Error messages try to point out where a problem is, but they don't tell you how to fix it.
 ```
 Uncaught TypeError: turtle.foward is not a function
     <anonymous> debugger eval code:1
@@ -64,7 +64,7 @@ The turtle knows a few commands other than `turtle.forward();` and `turtle.left(
 
 The list of things a turtle can do is called its _interface_, or sometimes _application programming interface_ or API for short. In programming we make new interfaces or use interfaces that other people made. For now you'll use existing APIs. In time you will create your own!
 
-Use multiple commands from the turtle interface to draw a picture with multiple colors. Save your drawing so you and other people can admire it forever.
+Use multiple commands from the turtle interface to draw a picture with many colors and pen sizes. Save your drawing so you and other people can admire it forever.
 
 **You are a programmer now!**
 
