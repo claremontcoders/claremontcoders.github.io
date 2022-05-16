@@ -49,6 +49,8 @@ How are the interior and exterior angles related to one another? How big are the
 
 **Hint:** Pretend to be the turtle and walk the path of an equilateral triangle. Step forward and turn, forward and turn, forward and turn. Is the angle you turn big or small?
 
+**Bonus:** When the turtle drew a square, it turned 90 degrees at each corner. Is that an interior or exterior angle&mdash;of which square?
+
 ## Explore Turtle Commands
 
 The turtle knows a few commands other than `turtle.forward();` and `turtle.left();`. The turtle can also walk right, back, pick its pen up, and put it down again, hide itself, and show itself again. The turtle can also change the size and color of its pen.
