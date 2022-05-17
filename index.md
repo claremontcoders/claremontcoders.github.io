@@ -9,4 +9,4 @@ description: Claremont Coder Club is awesome.
 permalink: /
 ---
 
-# Not bad, right?
+# Claremont Coder Club
