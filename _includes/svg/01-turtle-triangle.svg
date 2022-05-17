@@ -6,13 +6,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="-10 -409 541.5213 479.6218"
+   viewBox="-10 -417 542.86668 367.85795"
    version="1.1"
    id="svg77"
    sodipodi:docname="01-turtle-triangle.svg"
-   width="300"
-   height="300"
-   style="fill:none;stroke:#000000; display:block; margin:auto;"
+   width="300.74533"
+   height="230.09251"
+   style="display:block;margin:auto;fill:none;stroke:#000000"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
   <metadata
      id="metadata83">
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,27 +42,30 @@
      id="namedview79"
      showgrid="false"
      inkscape:zoom="2.247619"
-     inkscape:cx="287.71736"
-     inkscape:cy="198.87886"
+     inkscape:cx="288.46268"
+     inkscape:cy="146.11738"
      inkscape:window-x="144"
      inkscape:window-y="54"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg77" />
   <g
      id="g92"
-     transform="translate(47.717355,-9.257062)">
-     <path
-        style="stroke:orange;stroke-width:4.00000012pt;stroke-linejoin:round;"
-        inkscape:connector-curvature="0"
-        id="path65"
-        d="M 83.537288,7.9237287 A 69.3,69.3 0 0 0 -55.062712,7.9237287"/>
+     transform="translate(49.062712,-40.206812)">
+    <path
+       style="stroke:#ffa500;stroke-width:4.00000012pt;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       id="path65"
+       d="m 83.537288,7.9237287 a 69.3,69.3 0 0 0 -138.6,0" />
     <path
        style="stroke:#ee82ee;stroke-width:4.00000012pt;stroke-linejoin:round"
        inkscape:connector-curvature="0"
        id="path63"
-       d="m 83.537288,7.9237287 a 69.3,69.3 0 0 0 -34.6,-59.9999997 m 392.600002,0 a 69.3,69.3 0 0 0 -34.6,59.9999997 m -196.4,-339.9999987 a 69.3,69.3 0 0 0 69.3,0"/>
-    <path style="stroke-width:4.00000012pt;stroke-linejoin:round;stroke-dasharray:4,5"
-      d="M83.537288,7.9237287 L -59.062712,7.9237287" />
+       d="m 83.537288,7.9237287 a 69.3,69.3 0 0 0 -34.6,-59.9999997 m 392.600002,0 a 69.3,69.3 0 0 0 -34.6,59.9999997 m -196.4,-339.9999987 a 69.3,69.3 0 0 0 69.3,0" />
+    <path
+       style="stroke-width:4.00000012pt;stroke-linejoin:round;stroke-dasharray:4, 5"
+       d="m 83.537288,7.9237287 h -142.6"
+       id="path7"
+       inkscape:connector-curvature="0" />
     <path
        style="stroke-width:4.00000012pt;stroke-linejoin:round"
        inkscape:connector-curvature="0"
