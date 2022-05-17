@@ -5,31 +5,41 @@ layout: page
 
 # Fancy Paths
 
-Open up a [blank canvas](blank-canvas){:target="_blank"} to experiment on. Open up the JavaScript console to write your code. If you forgot how to open the JavaScript console, check out the beginning of [Project 1](01-turtle-time).
+Open up a [blank canvas](blank-canvas) to experiment on. Open up the JavaScript console to write your code. If you forgot how to open the JavaScript console, check out the beginning of [Project 1](01-turtle-time).
 
-## A Mystery
-Below is some code that uses features of JavaScript we haven't seen yet to combine multiple turtle commands to create a complicated figure.
+# Old Turtle, New Tricks
 
-Some of syntax is new and unfamiliar. That's okay for now. In the next project we will go over all of the pieces in this example. And you can experiment with this program to create cool designs today!
+Remember in [Project 1](01-turtle-time), the first thing we did was tell the turtle to walk in a square path. We used two commands from the turtle's interface, `turtle.forward()` to walk forward and `turtle.left()` to turn at the corners.
 
-1. Type the following code into the JavaScript console to create a fancy path.
 ```js
-turtle.setPenColor("orange");
-for(let i = 0; i < 20; i++) {
-  for(let step = 0; step < 180; step++) {
-       turtle.forward(1);
-       turtle.right(2);
-  }
-  turtle.right(18);
-}
-turtle.hide();
+turtle.forward(20);
+turtle.left(90);
+turtle.forward(20);
+turtle.left(90);
+turtle.forward(20);
+turtle.left(90);
+turtle.forward(20);
 ```
-2. Describe the path the turtle traces.
-3. Play with the directions for the turtle path above. Change all of the numbers one at a time. What happens with each change?
-  <strong>Hint:</strong> It may helpful to highlight the code by click-dragging the mouse and copying it to a virtual clipboard by type <kbd>Control</kbd> + <kbd>C</kbd> and pasting it into the JavaScript console by clicking the console and pressing <kbd>Control</kbd> + <kbd>V</kbd>.
 
-4. Change the order of the commands around. Can you guess what will happen before you run the code?
+It would be convenient if the turtle interface already included a command to make a square. Since it does not, we can create a _new_ command to use over and over again, just like the built-in commands in the turtle's interface.
 
-## Your Initials
+We can group together a sequence of commands by using a **function**. To create a function, we use the special JavaScript keyword `function` and give the function a name. In this case, let's call it `square()`. Function names end in parentheses to let you know that they are functions. The commands that you want to execute in your function go between a pair of curly braces.
 
-1. Come up with a series of turtle commands that draw your initials. Decorate and personalize your artwork. Save the code in a text file so that you can run it again later.
+```js
+function square() {
+  turtle.forward(20);
+  turtle.left(90);
+  turtle.forward(20);
+  turtle.left(90);
+  turtle.forward(20);
+  turtle.left(90);
+  turtle.forward(20);
+}
+```
+
+Once you have defined a new function like `square()`, you can use it just like any of the built-in commands. Since this command is not part of the turtle interface, call it directly by name `square()` without typing `turtle` at all.
+
+1. Copy and paste the function `square()` into the JavaScript console. How does the console respond? Do you see a square appear&mdash;why or why not?
+2. Use the `square()` function to draw many squares in different locations.
+3. Use the `square()` function to draw a diamond.
+4. Define a new function `triangle()` that directs the turtle to walk an equilateral triangle path.
