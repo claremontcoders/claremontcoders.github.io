@@ -61,7 +61,7 @@
        inkscape:connector-curvature="0"
        id="path63"
        d="m 83.537288,7.9237287 a 69.3,69.3 0 0 0 -34.6,-59.9999997 m 392.600002,0 a 69.3,69.3 0 0 0 -34.6,59.9999997 m -196.4,-339.9999987 a 69.3,69.3 0 0 0 69.3,0"/>
-    <path style="stroke-width:4.00000012pt;stroke-linejoin:round"
+    <path style="stroke-width:4.00000012pt;stroke-linejoin:round;stroke-dasharray:4,5"
       d="M83.537288,7.9237287 L -59.062712,7.9237287" />
     <path
        style="stroke-width:4.00000012pt;stroke-linejoin:round"
