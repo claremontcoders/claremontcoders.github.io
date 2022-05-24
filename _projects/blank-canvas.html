@@ -28,6 +28,17 @@ title: Blank Canvas
     <canvas id="turtle-layer" width="480" height="320">Turtle layer</canvas>
   </div>
   <a href="#" onclick="downloadCavnas(drawingLayer)" download="turtle.png">Download Image</a>
+  <h1>How to Use</h1>
+  <ol>
+    <li> Download this file to your computer. </li>
+    <li> Open this file in a plain text editor. (Like <a href="https://atom.io" target="_blank"> Atom</a> or Notepad. Not in Microsoft Word.) </li>
+    <li> Find the <code>&lt;script&gt</code> tag at the bottom of this file. It is the one with the comment <code>LOOK HERE!</code>. </li>
+    <li> Add your code between the <code>&lt;script&gt</code> tags. </li>
+    <li> Open the copy of this file on your in a web browser. </li>
+    <li> Alter the code and hit refresh to see your changes. </li>
+  </ol>
+
+  <p>It is helpful to save a different copy of this file for every project or subproject.</p>
   <script>
     {% include js/turtle.js %}
 
@@ -41,6 +52,13 @@ title: Blank Canvas
       const imageUrl = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
       window.location.href = imageUrl;
     }
+  </script>
+  <script>
+    // LOOK HERE!
+    // Download this file to your computer
+    // Add your code within these script tags
+    // Open the copy of this file on your in a web browser
+    // Alter the code and hit refresh to see your changes
   </script>
 </body>
 </html>
