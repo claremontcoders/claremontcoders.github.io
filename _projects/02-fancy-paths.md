@@ -86,9 +86,9 @@ Functions are the most common way to organize code in programming. You will make
 
 Defining functions is a way to extend the programming language with new commands that are customized specifically for you!
 
-1. What are some functions in the turtle interface that do not take input arguments?
-2. What are some functions in the turtle interface that require input arguments?
-3. What are some differences between the functions you listed in [1] and [2]? Does it make sense to you that some of these functions accept an input and others do not---how do they behave differently?
+1. What are some functions in the [turtle interface](01-turtle-time#explore-turtle-commands) that do not take input arguments?
+2. What are some functions in the [turtle interface](01-turtle-time#explore-turtle-commands) that require input arguments?
+3. What are some differences between the functions you listed in (1) and (2)? Does it make sense to you that some of these functions accept an input and others do not---how do they behave differently?
 4. Alter `triangle()` to accept an input parameter `steps` that will draw an equilateral triangle of a given side length.
 5. Use `square()` and `triangle()` to draw a design using shapes of many different sizes.
 
