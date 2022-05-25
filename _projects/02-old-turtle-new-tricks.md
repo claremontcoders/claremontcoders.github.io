@@ -1,15 +1,15 @@
 ---
-title: "Project 2: Fancy Paths"
+title: "Project 2: Functions"
 layout: page
 ---
 
-# Fancy Paths
+# Old Turtle, New Tricks
 
 From now on, save a new [blank canvas](blank-canvas) to your computer and open the file locally. You should add code for this project to the copy you downloaded. There are instructions how to do this on the canvas itself.
 
 You can---and should!---continue to experiment in JavaScript console as you write your code. Test new code in the console and copy working code to your file to build on and run again later. If you forgot how to open the JavaScript console, check out the beginning of [Project 1](01-turtle-time).
 
-# Old Turtle, New Tricks
+## Teaching the Turtle
 
 Remember in [Project 1](01-turtle-time), the first thing we did was tell the turtle to walk in a square path. We used two commands from the turtle's interface, `turtle.forward()` to walk forward and `turtle.left()` to turn at the corners.
 
@@ -50,6 +50,7 @@ Once you have defined a new function like `square()`, you can use it just like a
 5. Use `square()` and `triangle()` together to create a house. **Note:** The house drawing is one of the first drawings everyone makes with turtle. House has a famous cousin, the [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) program, in many other programming languages.
 
 [INSERT DIAGRAM]
+{% include svg/02-01-house.svg %}
 
 ## Big Square, Little Square
 1. Define a new function `bigger_square()` that traces out a square path with sides 40 steps long.
@@ -57,6 +58,7 @@ Once you have defined a new function like `square()`, you can use it just like a
 2. Use the functions `square()`, `bigger_square()`, `triangle()`, and `bigger_triangle()` to create a drawing that you are proud of.
 
 [INSERT DIAGRAM]
+{% include svg/02-02-flower.svg %}
 
 ## All the Squares
 So far we have had to make a new function to re-use our code to make shapes of a particular side length. Typing mostly identical code over and over again is tedious and error prone.
@@ -81,9 +83,11 @@ function square(steps) {
 The input parameter `steps` is a placeholder for a number. Now when you call the function `square()`, you need to provide a number as input. That number will be used when invoking `turtle.forward()`. By varying the value of `steps`, you can draw squares of different sizes with the same code.
 
 1. Edit `square()` to accept an input parameter `steps` as above.
-2. Use `square()` to draw square pyramids and spirals.
+2. Use `square()` to draw nested squares and square spirals.
 
 [INSERT DIAGRAM]
+{% include svg/02-03-nested.svg %}
+{% include svg/02-04-spigons.svg %}
 
 ## Function Design
 Functions are the most common way to organize code in programming. You will make a lot of functions in your career as an engineer. Soon you will be an expert at defining and using functions.
@@ -96,7 +100,6 @@ Defining functions is a way to extend the programming language with new commands
 4. Alter `triangle()` to accept an input parameter `steps` that will draw an equilateral triangle of a given side length.
 5. Use `square()` and `triangle()` to draw a design using shapes of many different sizes.
 
-[INSERT DIAGRAM]
 
 **BONUS:** The functions `square()` and `triangle()` look similar in that their bodies are composed of alternating calls to `turtle.foward()` and `turtle.left()` only.
 
