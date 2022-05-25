@@ -19,6 +19,7 @@ turtle.left(90);
 turtle.forward(20);
 turtle.left(90);
 turtle.forward(20);
+turtle.left(90);
 ```
 
 It would be convenient if the turtle interface already included a command to make a square. Since it does not, we can create a _new_ command to use over and over again, just like the built-in commands in the turtle's interface.
@@ -34,6 +35,7 @@ function square() {
   turtle.forward(20);
   turtle.left(90);
   turtle.forward(20);
+  turtle.left(90);
 }
 ```
 
