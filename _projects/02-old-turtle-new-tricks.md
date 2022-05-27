@@ -49,7 +49,6 @@ Once you have defined a new function like `square()`, you can use it just like a
 4. Define a new function `triangle()` that directs the turtle to walk an equilateral triangle path of side length 30.
 5. Use `square()` and `triangle()` together to create a house. **Note:** The house drawing is one of the first drawings everyone makes with turtle. House has a famous cousin, the [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) program, in many other programming languages.
 
-[INSERT DIAGRAM]
 {% include svg/02-01-house.svg %}
 
 ## Big Square, Little Square
