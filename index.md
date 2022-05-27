@@ -29,7 +29,7 @@ Here are a few things you might have heard about computers or programming that r
 | Myth | Reality |
 |------|---------|
 |You need to be a genius to program. | Not at all! Anyone can learn to code. **You can learn to code.**|
-|If I do it wrong, I'll break the computer | Unless you hit your computer with a bat, you can't break the computer. Experiment! Professional software engineers make mistakes every single day. The good ones are especially skilled at identifying mistakes and *fixing*, not avoiding, them.|
+|If I do it wrong, I'll break the computer. | Unless you hit your computer with a bat, you can't break the computer. Experiment! Professional software engineers make mistakes every single day. The good ones are especially skilled at identifying mistakes and fixing them, not avoiding them.|
 |Coding is too hard.| Coding is just like any other skill---painting, cooking, or weight lifting. The more practice you put in, the better you'll get at it.|
 |You need to go to college to learn to code.| Many great professional programmers are self-taught. But it's more fun if you join the club!|
 
