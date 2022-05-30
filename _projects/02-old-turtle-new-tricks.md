@@ -56,7 +56,6 @@ Once you have defined a new function like `square()`, you can use it just like a
 2. Define a new function `bigger_triangle()` that traces out an equilateral triangle path of side length 50.
 2. Use the functions `square()`, `bigger_square()`, `triangle()`, and `bigger_triangle()` to create a drawing that you are proud of.
 
-[INSERT DIAGRAM]
 {% include svg/02-02-flower.svg %}
 
 ## All the Squares
