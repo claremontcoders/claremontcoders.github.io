@@ -3,7 +3,7 @@
    version="1.1"
    width="150"
    height="300"
-   style="display:block;margin:auto;fill:none;stroke:purple;stroke-width:4pt;stroke-linejoin:round;">
+   style="display:block;margin:auto;fill:none;stroke:purple;stroke-width:3pt;stroke-linejoin:round;">
    <!-- square -->
    <path d="M0 200 H 100 V 100 H 0 Z"/>
    <!-- triangle -->

@@ -56,7 +56,7 @@ Once you have defined a new function like `square()`, you can use it just like a
 2. Define a new function `bigger_triangle()` that traces out an equilateral triangle path of side length 50.
 2. Use the functions `square()`, `bigger_square()`, `triangle()`, and `bigger_triangle()` to create a drawing that you are proud of.
 
-{% include svg/02-02-flower.svg %}
+{% include svg/02-02-squares-and-triangles.svg %}
 
 ## All the Squares
 So far we have had to make a new function to re-use our code to make shapes of a particular side length. Typing mostly identical code over and over again is tedious and error prone.
@@ -83,9 +83,7 @@ The input parameter `steps` is a placeholder for a number. Now when you call the
 1. Edit `square()` to accept an input parameter `steps` as above.
 2. Use `square()` to draw nested squares and square spirals.
 
-[INSERT DIAGRAM]
 {% include svg/02-03-nested.svg %}
-{% include svg/02-04-spigons.svg %}
 
 ## Function Design
 Functions are the most common way to organize code in programming. You will make a lot of functions in your career as an engineer. Soon you will be an expert at defining and using functions.

@@ -1,0 +1,21 @@
+<svg
+  viewBox="-5 -5 110 105"
+  version="1.1"
+  width="200"
+  height="200"
+  style="display:block;margin:auto;fill:none;stroke-width:1pt;stroke-linejoin:round;">
+  <defs>
+    <path id="0202-square" d="M0 0 H 20 V 20 H 0 Z"/>
+    <path id="0202-triangle" d="M0 40 l 10 -20 l 10 20 Z"/>
+  </defs>
+  <!-- squares -->
+  <use href="#0202-square" stroke="springgreen"/>
+  <use href="#0202-square" stroke="yellowgreen" transform="translate(20 20)"/>
+  <use href="#0202-square" stroke="lawngreen" transform="translate(40 40) scale(2)"/>
+
+  <!-- triangle -->
+  <use href="#0202-triangle" stroke="orange" transform="translate(60 0)"/>
+  <use href="#0202-triangle" stroke="violet" transform="translate(80 0)"/>
+  <use href="#0202-triangle" stroke="deeppink" transform="translate(60 0) scale(2)"/>
+
+</svg>
