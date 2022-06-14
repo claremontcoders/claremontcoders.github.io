@@ -83,7 +83,7 @@ The input parameter `steps` is a placeholder for a number. Now when you call the
 1. Edit `square()` to accept an input parameter `steps` as above.
 2. Use `square()` to draw nested squares and square spirals.
 
-{% include svg/02-03-nested.svg %}
+{% include svg/02-03-nested-squares.svg %}
 
 ## Function Design
 Functions are the most common way to organize code in programming. You will make a lot of functions in your career as an engineer. Soon you will be an expert at defining and using functions.
@@ -96,6 +96,7 @@ Defining functions is a way to extend the programming language with new commands
 4. Alter `triangle()` to accept an input parameter `steps` that will draw an equilateral triangle of a given side length.
 5. Use `square()` and `triangle()` to draw a design using shapes of many different sizes.
 
+{% include svg/02-04-spiral-triangles.svg %}
 
 **BONUS:** The functions `square()` and `triangle()` look similar in that their bodies are composed of alternating calls to `turtle.foward()` and `turtle.left()` only.
 

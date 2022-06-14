@@ -1,0 +1,46 @@
+<svg
+  viewBox="0 0 200 100"
+  version="1.1"
+  width="400"
+  height="200"
+  style="display:block;margin:auto;fill:none;stroke-width:1px;stroke-linejoin:round;">
+  <defs>
+    <path id="0204-square" d="M0 0 H 10 V 10 H 0 Z" vector-effect="non-scaling-stroke"/>
+    <path id="0204-triangle" d="M0 0 l 5 10 l 5 -10 Z" transform="translate(5 5) rotate(180) translate(-5 -5)" vector-effect="non-scaling-stroke"/>
+  </defs>
+
+  <g transform="translate(70 61)" stroke="orange" stroke-width="4">
+    <use href="#0204-square" />
+    <use href="#0204-square" transform="scale(3.5) rotate(90)"/>
+    <use href="#0204-square" transform="scale(4.75) rotate(140)" />
+    <use href="#0204-square" transform="scale(6) rotate(180)" />
+  </g>
+
+  <g transform="translate(160 61)" stroke="fuschia" stroke-width="4">
+    <use href="#0204-triangle" />
+    <use href="#0204-triangle" transform="scale(4.75) rotate(140)" />
+    <use href="#0204-triangle" transform="scale(6) rotate(180)" />
+  </g>
+  <g transform="translate(160 61)" stroke="springgreen" stroke-width="2">
+    <use href="#0204-triangle" />
+    <use href="#0204-triangle" transform="scale(1.25) rotate(10)" />
+    <use href="#0204-triangle" transform="scale(1.5) rotate(20)" />
+    <use href="#0204-triangle" transform="scale(1.75) rotate(30)" />
+    <use href="#0204-triangle" transform="scale(2) rotate(40)" />
+    <use href="#0204-triangle" transform="scale(2.25) rotate(40)" />
+    <use href="#0204-triangle" transform="scale(2.5) rotate(50)" />
+    <use href="#0204-triangle" transform="scale(2.75) rotate(60)" />
+    <use href="#0204-triangle" transform="scale(3) rotate(70)" />
+    <use href="#0204-triangle" transform="scale(3.25) rotate(80)" />
+    <use href="#0204-triangle" transform="scale(3.5) rotate(90)" />
+    <use href="#0204-triangle" transform="scale(3.75) rotate(100)" />
+    <use href="#0204-triangle" transform="scale(4) rotate(110)" />
+    <use href="#0204-triangle" transform="scale(4.25) rotate(120)" />
+    <use href="#0204-triangle" transform="scale(4.5) rotate(130)" />
+    <use href="#0204-triangle" transform="scale(4.75) rotate(140)" />
+    <use href="#0204-triangle" transform="scale(5) rotate(150)" />
+    <use href="#0204-triangle" transform="scale(5.25) rotate(160)" />
+    <use href="#0204-triangle" transform="scale(5.5) rotate(170)" />
+    <use href="#0204-triangle" transform="scale(6) rotate(180)" />
+  </g>
+</svg>
