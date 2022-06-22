@@ -53,6 +53,7 @@ Before the start of each loop, the JavaScript interpreter checks whether the val
 4. Add extra turtle commands to the for-loop that draws a square. What sort of paths does it draw?
 
 [INSERT DIAGRAM]
+{% include svg/03-01-square.svg %}
 
 ## Fun Functions and Loops
 
@@ -71,6 +72,10 @@ function square(steps) {
 2. Write a function `pentagon()` that traces out the shape of pentagon.
 3. Write a function `hexagon()` that traces out the shape of a hexagon.
 4. Write a function `circle()` that traces out the shape of a circle. **Hint:** Try to walk in a circle like the turtle would in real life. You can approximate a circle with a polygon that has very many tiny sides.
+**Bonus:** Can you calculate the radius of the circle from the step length of each side?  
+{% include svg/03-02-shapes.svg %}
 5. Draw a picture out are proud of that uses triangles, squares, pentagons, hexagons, and circles of different sizes.
 
-[INSERT DIAGRAM]
+{% include svg/03-03-shape-zoo.svg %}
+
+**Bonus:** Think about how to use a for-loop to create a `polygon(sides, steps)` function that can generate a polygon with `sides` sides each of which is `steps` long. What about a function that used the `angle` to turn instead of the number of sides to walk?

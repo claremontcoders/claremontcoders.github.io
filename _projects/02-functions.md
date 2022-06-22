@@ -98,6 +98,6 @@ Defining functions is a way to extend the programming language with new commands
 
 {% include svg/02-04-spiral-triangles.svg %}
 
-**BONUS:** The functions `square()` and `triangle()` look similar in that their bodies are composed of alternating calls to `turtle.foward()` and `turtle.left()` only.
+**Bonus:** The functions `square()` and `triangle()` look similar in that their bodies are composed of alternating calls to `turtle.foward()` and `turtle.left()` only.
 
 Is there a way to define a function `polygon(steps, angle)` that produces a square with one set of inputs and triangles with another set?
