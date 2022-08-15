@@ -1,6 +1,13 @@
 canvas {
  position: absolute;
 }
+figcaption {
+  text-align: center;
+  color: $grey-dk-100;
+}
+figcaption::before {
+  content: "Figure: ";
+}
 kbd {
 border-radius: 3px;
 padding: 1px 2px 0;

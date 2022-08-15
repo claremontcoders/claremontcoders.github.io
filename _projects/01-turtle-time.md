@@ -60,14 +60,18 @@ The turtle knows a few commands other than `turtle.forward();` and `turtle.left(
 2. Use `turtle.penUp();` to pick the pen up. Move the turtle afterward. Unlike `turtle.forward(steps);` and `turtle.left(degrees);`, this command does not take any input.
 3. Use `turtle.penDown();` to put the pen down to begin drawing again.
 4. Use `turtle.setPenWidth(size)` to change the width of the pen.
-5. Use `turtle.setPenColor(color);` to change the color of the pen that the turtle draws with. You can find the [list of colors](https://en.wikipedia.org/wiki/Web_colors#Extended_colors) that the turtle knows by name on Wikipedia. **Important:** When you tell the turtle to change color of the pen, you need quote the name of the color like this: `turtle.setPenColor("lime");`.
+5. Use `turtle.setPenColor(color);` to change the color of the pen that the turtle draws with. The turtle can draw with colors of the rainbow `red`, `orange`, `yellow`, `green`, `blue`, `indigo`, and `violet`, and a whole bunch more! You can find the [full list of colors](https://en.wikipedia.org/wiki/Web_colors#Extended_colors) that the turtle knows by name on Wikipedia. **Important:** When you tell the turtle to change color of the pen, you need quote the name of the color like this: `turtle.setPenColor("lime");`.
 6. Use the commands `turtle.hide();` and `turtle.show();` to make the turtle disappear and reappear from your drawing.
 
 The list of things a turtle can do is called its _interface_, or sometimes _application programming interface_ or API for short. In programming we make new interfaces or use interfaces that other people made. For now you'll use existing APIs. In time you will create your own!
 
+## Code a Drawing
+
 Use multiple commands from the turtle interface to draw a picture with many colors and pen sizes. Save your drawing so you and other people can admire it forever.
 
-**You are a programmer now!**
+## Congratulations!
+
+You are a programmer now!
 
 <script>
 {% include js/turtle.js %}

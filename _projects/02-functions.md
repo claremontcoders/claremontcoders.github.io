@@ -50,14 +50,24 @@ Once you have defined a new function like `square()`, you can use it just like a
 4. Define a new function `triangle()` that directs the turtle to walk an equilateral triangle path of side length 30.
 5. Use `square()` and `triangle()` together to create a house. **Note:** The house drawing is one of the first drawings everyone makes with turtle. House has a famous cousin, the [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) program, in many other programming languages.
 
-{% include svg/02-01-house.svg %}
+<figure>
+  {% include svg/02-01-house.svg %}
+  <figcaption>A square and triangle form a house.</figcaption>
+</figure>
 
 ## Big Square, Little Square
 1. Define a new function `bigger_square()` that traces out a square path with sides 40 steps long.
 2. Define a new function `bigger_triangle()` that traces out an equilateral triangle path of side length 50.
 2. Use the functions `square()`, `bigger_square()`, `triangle()`, and `bigger_triangle()` to create a drawing that you are proud of.
 
-{% include svg/02-02-squares-and-triangles.svg %}
+<figure>
+  {% include svg/02-02-squares-and-triangles.svg %}
+  <figcaption>This is an example. Don't copy it. Make your own!</figcaption>
+</figure>
+
+### Colors
+
+The example drawing uses the colors `springgreen`, `yellowgreen`, `lawngreen`, `orange`, `violet`, and `deeppink`. In case you forgot, here is the [full list of colors](https://en.wikipedia.org/wiki/Web_colors#Extended_colors) the turtle knows by name.
 
 ## All the Squares
 So far we have had to make a new function to re-use our code to make shapes of a particular side length. Typing mostly identical code over and over again is tedious and error prone.
@@ -82,9 +92,13 @@ function square(steps) {
 The input parameter `steps` is a placeholder for a number. Now when you call the function `square()`, you need to provide a number as input. That number will be used when invoking `turtle.forward()`. By varying the value of `steps`, you can draw squares of different sizes with the same code.
 
 1. Edit `square()` to accept an input parameter `steps` as above.
-2. Use `square()` to draw nested squares and square spirals.
+2. Use `square()` to draw nested squares.
+3. Reuse `square()` to draw square spirals.
 
-{% include svg/02-03-nested-squares.svg %}
+<figure>
+  {% include svg/02-03-nested-squares.svg %}
+  <figcaption>These are for inspiration. You can make any kind of nested squares and spirals!</figcaption>
+</figure>
 
 ## Function Design
 Functions are the most common way to organize code in programming. You will make a lot of functions in your career as an engineer. Soon you will be an expert at defining and using functions.
@@ -97,8 +111,15 @@ Defining functions is a way to extend the programming language with new commands
 4. Alter `triangle()` to accept an input parameter `steps` that will draw an equilateral triangle of a given side length.
 5. Use `square()` and `triangle()` to draw a design using shapes of many different sizes.
 
-{% include svg/02-04-spiral-triangles.svg %}
+<figure>
+  {% include svg/02-04-spiral-triangles.svg %}
+  <figcaption>What designs will you come up with?</figcaption>
+</figure>
 
-**Bonus:** The functions `square()` and `triangle()` look similar in that their bodies are composed of alternating calls to `turtle.foward()` and `turtle.left()` only.
+## Polygon Preview
 
-Is there a way to define a function `polygon(steps, angle)` that produces a square with one set of inputs and triangles with another set?
+The functions `square()` and `triangle()` look similar in that their bodies are composed of alternating calls to `turtle.foward()` and `turtle.left()` only.
+
+Is there a way to define a function `polygon(steps, angle)` that produces a square with one set of inputs and triangles with another set? What do you wish you could be able to do in order to define a `polygon()` function?
+
+We'll see one way to program a general purpose function that can draw polygons in Project 3. There are many different ways to create such a function!
