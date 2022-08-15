@@ -1,7 +1,6 @@
 ---
 title: What is Coding?
 layout: page
-nav_order: 0
 ---
 
 # What is Coding?
