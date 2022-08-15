@@ -25,7 +25,7 @@ turtle.forward(20);
 turtle.left(90);
 ```
 
-It would be convenient if the turtle interface already included a command to make a square. Since it does not, we can create a _new_ command to use over and over again, just like the built-in commands in the turtle's interface.
+It would be convenient if the turtle interface already included a command to make a square. Since it does not, we can create a _new_ command to use over and over again, just like the built-in commands in the turtle's interface. Which of your [four friends](../what-is-coding/#what-can-you-do) is a function?
 
 We can group together a sequence of commands by using a **function**. To create a function, we use the special JavaScript keyword `function` and give the function a name. In this case, let's call it `square()`. Function names end in parentheses to let you know that they are functions. The commands that you want to execute in your function go between a pair of curly braces.
 
