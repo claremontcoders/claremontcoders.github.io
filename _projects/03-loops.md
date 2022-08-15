@@ -1,6 +1,7 @@
 ---
 title: "Project 3: Loops"
 layout: page
+nav_order: 1
 ---
 
 # Repeating, Repeating

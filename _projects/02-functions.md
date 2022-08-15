@@ -1,6 +1,7 @@
 ---
 title: "Project 2: Functions"
 layout: page
+nav_order: 1
 ---
 
 # Old Turtle, New Tricks

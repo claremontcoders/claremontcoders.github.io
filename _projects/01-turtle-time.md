@@ -1,6 +1,7 @@
 ---
 title: "Project 1: Turtle Time"
 layout: page
+nav_order: 1
 ---
 
 # It's Turtle Time
