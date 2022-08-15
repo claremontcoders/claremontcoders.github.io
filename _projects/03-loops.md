@@ -64,6 +64,10 @@ Before each iteration of a for-loop, the JavaScript interpreter will check the l
 
 The test in our example for-loop asks, "Is the current value of `side` smaller than four?" Whenever `side` is less than four, the loop repeats one more time. Once `side` is equal to four or bigger, the loop ends.
 
+```js
+side < 4;
+```
+
 ### The Loop Update
 After the loop repeats, the loop update command gets executed. This is an opportunity to update the loop variables we defined in the setup step.
 
