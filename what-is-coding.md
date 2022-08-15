@@ -26,6 +26,8 @@ But don't let the short length of this list fool you. Each of the four categorie
 
 ## How to Learn
 
-Practice playing with your four friends. Don't worry if it takes a lot of time to work through a single problem. Programming takes patience, persistence, and a lot of playing! If your programs don't behave the way you expect the first time, don't worry. Try to understand _why_ they are doing something different than what you hoped for and imagine different ways to use your four friends to accomplish what you aimed to do.
+Practice playing with your four friends.
+
+Don't worry if it takes a lot of time to work through a single problem. Programming takes patience, persistence, and a lot of playing! If your programs don't behave the way you expect the first time, don't worry. Try to understand _why_ they are doing something different than what you hoped for and imagine different ways to use your four friends to accomplish what you aimed to do.
 
 Whenever you get stuck, ask yourself which of these four friends would be helpful. When you learn a new programming technique, try to identify which of your four programming friends is this new thing most like. Keeping these four ideas in the back of your head will help you write better, clearer programs.
