@@ -6,7 +6,7 @@ nav_order: 1
 
 # Old Turtle, New Tricks
 
-From now on, save a new [blank canvas](blank-canvas) to your computer and open the file locally. You should add code for this project to the copy you downloaded. There are instructions how to do this on the canvas itself.
+From now on, save a new [blank canvas](blank-canvas) to your computer in a file called `functions.html` and open it locally. You should add code for this project to the file you downloaded. There are instructions how to do this on the canvas itself.
 
 You can---and should!---continue to experiment in JavaScript console as you write your code. Test new code in the console and copy working code to your file to build on and run again later. If you forgot how to open the JavaScript console, check out the beginning of [Project 1](01-turtle-time).
 

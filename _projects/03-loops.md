@@ -35,7 +35,7 @@ Loops repeat instructions. If we were telling the turtle how to trace out a squa
 > 1. Walk forward `50`.
 > 2. Turn `90` degrees to the left.
 
-We can use special syntax called a *for-loop* to tell the turtle to repeat a series of commands. The for in a for-loop is short for "for each". Which of your [four friends](../what-is-coding/#what-can-you-do) is a for-loop?
+We can use special syntax called a *for-loop* to tell the turtle to repeat a series of commands. The for in a for-loop is short for "for each". Which of your [four friends](/what-is-coding/#what-can-you-do) is a for-loop?
 
 A for-loop has a few pieces to it that can be overwhelming the first time you see it. It begins with the special keyword `for` and a pair of parentheses. Inside the parentheses there are three parts separated by semicolons: the setup, the loop test, and an update that happens after each loop iteration.
 

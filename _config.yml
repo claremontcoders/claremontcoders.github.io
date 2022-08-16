@@ -35,6 +35,13 @@ remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
 
+# Default Jekyll configuration
+defaults:
+  - scope:
+      path: "static/img"
+    values:
+      image: true
+
 # Just the Docs Configuration
 search_enabled: false
 heading_anchors: true
