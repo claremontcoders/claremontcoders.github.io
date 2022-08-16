@@ -6,7 +6,7 @@ nav_order: 1
 
 # Repeating, Repeating
 
-For this project, save a new [blank canvas](blank-canvas) to your computer and open the file locally. You should add code for this project to the copy you downloaded. There are instructions how to do this on the canvas itself.
+For this project, save a new [blank canvas](blank-canvas) to your computer in a file called `loops.html` and open it locally. You should add code for this project to the file you downloaded. There are instructions how to do this on the canvas itself.
 
 You can---and should!---continue to experiment in JavaScript console as you write your code. Test new code in the console and copy working code to your file to build on and run again later. If you forgot how to open the JavaScript console, check out the beginning of [Project 1](01-turtle-time).
 
@@ -50,7 +50,9 @@ for(let side = 0; side < 4; side = side + 1) {
 
 ### The Loop Setup
 
-Since we're going to draw a square, we'll use a *variable* called `side` keep track of which side of the square we're currently going to draw. A variable is a value, in this case a number, that we can update. To create a variable we use the special keyword `let` followed by the variable name and the symbol `=` (called "gets") and the value of the variable. The way you read the setup is "`side` gets the value `0`."
+Since we're going to draw a square, we'll use a *variable* called `side` keep track of which side of the square we're currently going to draw. A variable is a value, in this case a number, that we can update. Which of your [four friends](../what-is-coding/#what-can-you-do) is a variable?
+
+To create a variable we use the special keyword `let` followed by the variable name and the symbol `=` (called "gets") and the value of the variable. The way you read the setup is "`side` gets the value `0`."
 
 ```js
 let side = 0;
