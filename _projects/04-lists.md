@@ -137,6 +137,19 @@ const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 Notice that the order of the colors in our list `colors` is the same order that appears in our `pinwheel()` function. If you change the order of the colors in the list, you will change the order in the pinwheel.
 
+Lists have a special property called *length* that is the number of elements it contains.
+
+```js
+colors.length;
+> 7
+```
+
+We can use the length list property to calculate the angle the turtle needs to turn between spokes.
+
+```js
+const angle =  360 / colors.length;
+```
+
 ### A New Loop
 We can use a special for-of loop to loop through each color in our list. A for-of loop is like the for-loop we already know how to use but for lists. For-of loops will iterate through each element in a list.
 
