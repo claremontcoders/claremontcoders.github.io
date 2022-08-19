@@ -47,6 +47,7 @@ Now we can reuse `angle` to construct our pinwheel.
 
 ```js
 function pinwheel() {
+  const angle = 360 / 7;
   // Spoke 0
   spoke();
   turtle.left(angle);
@@ -86,6 +87,7 @@ Now let's add in some color. We'll use the colors in [Roy G Biv](https://www.you
 
 ```js
 function pinwheel() {
+  const angle = 360  / 7;
   // Red spoke
   turtle.setPenColor("red");
   spoke();
