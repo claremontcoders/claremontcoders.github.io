@@ -1,9 +1,9 @@
 ---
-title: What is Coding?
+title: What is coding?
 layout: page
 ---
 
-# What is Coding?
+# What Is Coding?
 
 Coding, or programming, is a style of writing. When you code, you use a special programming language to write programs that a computer can run. In fact, each programming language is implemented by a computer program that knows how to interpret language! We will use a programming language called JavaScript in our projects.
 

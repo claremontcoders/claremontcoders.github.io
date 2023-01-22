@@ -11,10 +11,21 @@ permalink: /
 
 # Claremont Coder Club
 
-The Claremont Coder Club is a place for young people in [Claremont, NH](https://www.claremontnh.com/),
+The Claremont Coder Club a [4-H program](https://extension.unh.edu/new-hampshire-4-h/counties/sullivan-county-4-h) for young people in [Claremont, NH](https://www.claremontnh.com/),
 and the Upper Valley to hang out and learn technology the best way possible&mdash;by playing!
 
 Absolutely everyone can learn to program. You don't need to be good at math or science to learn to program. You can start at any age---younger or older.
+
+## Sign Up for the Winter Session
+
+The winter session begins **February 6**. It is open to all students grades 5&ndash;9 in Sullivan county. To sign up email [roguerobotsof4h@gmail.com](mailto:roguerobotsof4h@gmail.com).
+
+| What: | Coding Club Winter Session |
+| When: | Mondays, 5&ndash;6:30pm <br> February 6 &ndash; March 6 |
+| Who:  | Grades 5&ndash;9 |
+| Why:  | To create art and learn to program |
+| How:  | Email [roguerobotsof4h@gmail.com](mailto:roguerobotsof4h@gmail.com) |
+
 
 ## We Need You
 
