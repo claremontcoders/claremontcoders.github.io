@@ -24,6 +24,6 @@ function square(steps) {
 4. Write a function `circle()` that traces out the shape of a circle. **Hint:** Try to walk in a circle like the turtle would in real life. You can approximate a circle with a polygon that has very many tiny sides.
 **Bonus:** Can you calculate the radius of the circle from the step length of each side?  
 {% include svg/03-02-shapes.svg %}
-5. Draw a picture out are proud of that uses triangles, squares, pentagons, hexagons, and circles of different sizes.
+5. Draw a picture that you are proud of that contains many different shapes&mdash;triangles, squares, pentagons, hexagons, and circles&mdash;of different sizes.
 
 {% include svg/03-03-shape-zoo.svg %}
