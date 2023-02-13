@@ -7,9 +7,13 @@ nav_order: 999
 <head>
   <title>Turtle</title>
   <style>
+    html, body {
+      height: 100%;
+    }
+
      #world {
-       width: 480px;
-       height: 320px;
+       width: 100%;
+       height: 100%;
        border: 1px solid black;
        position: relative;
      }
@@ -44,9 +48,10 @@ nav_order: 999
     {% include js/turtle.js %}
 
     // Create the turtle and add it to the world
+    const world = document.getElementById("world");
     const drawingLayer = document.getElementById("drawing-layer");
     const turtleLayer = document.getElementById("turtle-layer");
-    const turtle = new Turtle(drawingLayer, turtleLayer);
+    const turtle = new Turtle(world, drawingLayer, turtleLayer);
   </script>
   <script>
     function downloadCavnas(canvas) {

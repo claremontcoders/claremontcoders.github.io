@@ -36,9 +36,14 @@ function refreshTurtle(turtle) {
 }
 
 class Turtle {
-  constructor(drawingCanvas, turtleCanvas) {
+  constructor(worldDiv, drawingCanvas, turtleCanvas) {
+    const {offsetWidth: width, offsetHeight: height} = worldDiv;
+
     this.drawingCanvas = drawingCanvas;
     this.drawingContext = drawingCanvas.getContext("2d");
+    this.drawingContext.canvas.width = width;
+    this.drawingContext.canvas.height = height;
+
     this.heading = 0;
     this.x = drawingCanvas.width / 2 + 0.5;
     this.y = drawingCanvas.height / 2 + 0.5;
@@ -46,6 +51,8 @@ class Turtle {
     this.showTurtle = true;
     this.turtleCanvas = turtleCanvas;
     this.turtleContext = turtleCanvas.getContext("2d");
+    this.turtleContext.canvas.width = width;
+    this.turtleContext.canvas.height = height;
 
     refreshTurtle(this);
   }

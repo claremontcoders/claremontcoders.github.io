@@ -92,8 +92,8 @@ function square(steps) {
 The input parameter `steps` is a placeholder for a number. Now when you call the function `square()`, you need to provide a number as input. That number will be used when invoking `turtle.forward()`. By varying the value of `steps`, you can draw squares of different sizes with the same code.
 
 1. Edit `square()` to accept an input parameter `steps` as above.
-2. Use `square()` to draw nested squares.
-3. Reuse `square()` to draw square spirals.
+2. Use `square(steps)` to draw nested squares.
+3. Reuse `square(steps)` to draw square spirals.
 
 <figure>
   {% include svg/02-03-nested-squares.svg %}
