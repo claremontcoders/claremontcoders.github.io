@@ -1,6 +1,6 @@
 ---
 layout: turtle-template
-title: "Project 7: Loop Anatomy"
+title: "Project 6: Loop Anatomy"
 ---
 # Loop Anatomy
 
