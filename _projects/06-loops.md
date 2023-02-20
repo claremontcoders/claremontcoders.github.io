@@ -2,7 +2,7 @@
 layout: turtle-template
 title: "Project 6: Loop Anatomy"
 ---
-# Loop Anatomy
+# Project 6: Loop Anatomy
 
 ## A Shorter Square
 
