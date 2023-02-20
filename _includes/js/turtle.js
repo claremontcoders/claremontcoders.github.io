@@ -57,6 +57,22 @@ class Turtle {
     refreshTurtle(this);
   }
 
+  reset() {
+    this.turtleContext.clearRect(
+      0, 0,
+      this.turtleCanvas.width, this.turtleCanvas.height
+    );
+    this.drawingContext.clearRect(
+      0, 0,
+      this.drawingCanvas.width, this.drawingCanvas.height
+    );
+    this.x = this.drawingCanvas.width / 2 + 0.5;
+    this.y = this.drawingCanvas.height / 2 + 0.5;
+    this.heading = 0;
+
+    refreshTurtle(this);
+  }
+
   penDown() {
     this.isPenDown = true;
   }
