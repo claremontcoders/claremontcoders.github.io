@@ -3,7 +3,23 @@ const TURTLE_BASE_PX = 8;
 const TURTLE_HEIGHT_PX = 10;
 const REGION_PX = TURTLE_HEIGHT_PX * 2;
 
-function to_rad(deg) {
+function postscriptHeader(width, height) {
+  return [
+    "%%!PSAdobe3.0EPSF3.0",
+    `%%%%BoundingBox: 0 0 ${width} ${height}`,
+    "/l { newpath moveto lineto stroke } def",
+  ];
+}
+function hexColorToPsColor(hexColor) {
+  const hex = hexColor.replace("#", "")
+  const int = parseInt(hex, 16);
+  const red = ((int >> 16) & 255) / 255;
+  const green = ((int >> 8) & 255) / 255;
+  const blue = (int & 255) / 255;
+  return [red, green, blue];
+}
+
+function toRad(deg) {
   return deg * Math.PI / 180;
 }
 
@@ -44,32 +60,31 @@ class Turtle {
     this.drawingContext.canvas.width = width;
     this.drawingContext.canvas.height = height;
 
-    this.heading = 0;
-    this.x = drawingCanvas.width / 2 + 0.5;
-    this.y = drawingCanvas.height / 2 + 0.5;
-    this.isPenDown = true;
-    this.showTurtle = true;
     this.turtleCanvas = turtleCanvas;
     this.turtleContext = turtleCanvas.getContext("2d");
     this.turtleContext.canvas.width = width;
     this.turtleContext.canvas.height = height;
 
+    this.heading = 0;
+    this.x = width / 2 + 0.5;
+    this.y = height / 2 + 0.5;
+    this.width = width;
+    this.height = height;
+    this.isPenDown = true;
+    this.showTurtle = true;
+    this.postscriptCommands = postscriptHeader(width, height);
+
     refreshTurtle(this);
   }
 
   reset() {
-    this.turtleContext.clearRect(
-      0, 0,
-      this.turtleCanvas.width, this.turtleCanvas.height
-    );
-    this.drawingContext.clearRect(
-      0, 0,
-      this.drawingCanvas.width, this.drawingCanvas.height
-    );
-    this.x = this.drawingCanvas.width / 2 + 0.5;
-    this.y = this.drawingCanvas.height / 2 + 0.5;
+    const {width, height} = this.drawingCanvas;
+    this.turtleContext.clearRect(0, 0, width, height);
+    this.drawingContext.clearRect(0, 0, width, height);
+    this.x = width / 2 + 0.5;
+    this.y = height / 2 + 0.5;
     this.heading = 0;
-
+    this.postscriptCommands = postscriptHeader(width, height);
     refreshTurtle(this);
   }
 
@@ -84,6 +99,9 @@ class Turtle {
   setPenColor(color) {
     this.drawingContext.strokeStyle = color;
     this.turtleContext.fillStyle = color;
+    const hexColor = this.turtleContext.fillStyle;
+    const psCommand = [...hexColorToPsColor(hexColor), "setrgbcolor"].join(" ")
+    this.postscriptCommands.push(psCommand);
     refreshTurtle(this);
   }
 
@@ -107,6 +125,9 @@ class Turtle {
     this.drawingContext.lineTo(this.x, this.y);
     this.drawingContext.stroke();
 
+    const psCommand = `${x0} ${this.height - y0} ${this.x} ${this.height - this.y} l`
+    this.postscriptCommands.push(psCommand);
+
     refreshTurtle(this);
   }
 
@@ -115,7 +136,7 @@ class Turtle {
   }
 
   left(degrees) {
-    const rad = to_rad(degrees);
+    const rad = toRad(degrees);
     this.heading -= rad;
     refreshTurtle(this);
   }
@@ -132,5 +153,11 @@ class Turtle {
   hide() {
     this.showTurtle = false;
     clearTurlte(this);
+  }
+
+  toPostScript() {
+    const commands = this.postscriptCommands.slice();
+    commands.push("showpage");
+    return commands.join("\n");
   }
 }
